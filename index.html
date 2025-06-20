@@ -42,16 +42,61 @@
     </style>
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-zinc-900 text-blue-600">
 
     <!-- Header -->
-    <header id="home" class="bg-white shadow pb-10">
+    <header id="home" class="bg-black shadow pb-10">
         <nav class="container mx-auto flex items-center justify-between px-6 py-4">
-            <a href="#home" class="text-2xl font-bold text-blue-600">ME.pond</a>
+            <a href="#home" class="text-2xl font-bold text-blue-600 hover:scale-110 hover:text-white ">ME.pond</a>
             <ul class="hidden md:flex space-x-6 font-medium">
-                <li><a href="#about" class="hover:text-blue-600">เกี่ยวกับฉัน</a></li>
-                <li><a href="#portfolio" class="hover:text-blue-600">ผลงาน</a></li>
-                <li><a href="#contact" class="hover:text-blue-600">ติดต่อ</a></li>
+                <li>
+                    <a href="#about" class="relative inline-block text-base font-medium hover:text-white hover:border-white
+            transition-transform duration-300 hover:scale-110 group overflow-hidden
+            border border-blue-500 rounded px-4 py-2">
+
+                        <span class="relative z-10">about us</span>
+
+                        <!-- แสงวิ่ง -->
+                        <span class="absolute top-0 left-0 w-full h-full 
+                 bg-gradient-to-r from-transparent via-blue-500 to-transparent 
+                 opacity-0 group-hover:opacity-60 
+                 transform -translate-x-full group-hover:translate-x-full 
+                 transition duration-700 ease-out pointer-events-none blur-sm">
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="relative inline-block text-base font-medium hover:text-white hover:border-white
+            transition-transform duration-300 hover:scale-110 group overflow-hidden
+            border border-blue-500 rounded px-4 py-2">
+
+                        <span class="relative z-10">portfolio</span>
+
+                        <!-- แสงวิ่ง -->
+                        <span class="absolute top-0 left-0 w-full h-full 
+                 bg-gradient-to-r from-transparent via-blue-500 to-transparent 
+                 opacity-0 group-hover:opacity-60 
+                 transform -translate-x-full group-hover:translate-x-full 
+                 transition duration-700 ease-out pointer-events-none blur-sm">
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="relative inline-block text-base font-medium hover:text-white hover:border-white
+            transition-transform duration-300 hover:scale-110 group overflow-hidden
+            border border-blue-500 rounded px-4 py-2">
+
+                        <span class="relative z-10">contact</span>
+
+                        <!-- แสงวิ่ง -->
+                        <span class="absolute top-0 left-0 w-full h-full 
+                 bg-gradient-to-r from-transparent via-blue-500 to-transparent 
+                 opacity-0 group-hover:opacity-60 
+                 transform -translate-x-full group-hover:translate-x-full 
+                 transition duration-700 ease-out pointer-events-none blur-sm">
+                        </span>
+                    </a>
+                </li>
             </ul>
             <div class="md:hidden">
                 <!-- Hamburger icon (ยังไม่ทำงานจริง แต่สามารถเพิ่ม JS ภายหลังได้) -->
@@ -81,20 +126,20 @@
             </div>
         </section>
 
-        <div class="overflow-hidden bg-white rounded shadow">
-            <div class="marquee text-xl text-blue-600 p-2">
+        <div class="overflow-hidden rounded shadow">
+            <div class="marquee text-xl text-white p-2">
                 👋 สวัสดีครับ ยินดีต้อนรับเข้าสู่เว็บไซต์ของผม!
             </div>
         </div>
 
-        <div class="overflow-hidden bg-white rounded shadow">
-            <div class="marquee marquee-slow text-xl text-green-600 p-4">
+        <div class="overflow-hidden rounded shadow">
+            <div class="marquee marquee-slow text-xl text-white p-4">
                 ก่อนจะหยุด เคยสุดมาก่อน👌
             </div>
         </div>
 
-        <div class="overflow-hidden bg-white rounded shadow">
-            <div class="marquee marquee-fast text-xl text-red-600 p-1">
+        <div class="overflow-hidden rounded shadow">
+            <div class="marquee marquee-fast text-xl text-white p-1">
                 ฝากติดตามด้วยนะครับ🎉🎉🎉
             </div>
         </div>
@@ -117,16 +162,16 @@
     </header>
 
     <!-- Main -->
-    <main>
+    <main class="bg-zinc-900">
 
 
 
 
 
         <!-- Hero Section -->
-        <div class="container mx-auto px-6 py-12 text-center">
+        <div class="container mx-auto px-6 py-12 text-center bg-zinc-900">
             <img src="profile.jpg" alt="รูปโปรไฟล์ของคุณ" class="w-32 h-32 mx-auto rounded-full shadow mb-4" />
-            <h1 class="text-3xl md:text-4xl font-bold mb-2">สวัสดีครับ ผมคือ []</h1>
+            <h1 class="text-3xl md:text-4xl font-bold mb-2">My name's Mister Maxim</h1>
             <p class="text-lg text-gray-600 mb-4">ตำแหน่ง/ความเชี่ยวชาญของคุณ</p>
             <a href="#portfolio"
                 class="inline-block px-6 py-2 bg-blue-600 text-white rounded shadow hover:bg-blue-700 transition">ดูผลงาน</a>
@@ -135,7 +180,7 @@
 
 
         <!-- About Section -->
-        <section id="about" class="py-16 bg-white">
+        <section id="about" class="py-16 bg-black">
             <div class="container mx-auto px-6 text-center">
                 <marquee behavior="scroll" direction="left">
                     👋 สวัสดีครับ ยินดีต้อนรับเข้าสู่เว็บไซต์ของผม!
@@ -146,11 +191,11 @@
         </section>
 
         <!-- Portfolio Section -->
-        <section id="portfolio" class="py-16 bg-gray-100">
+        <section id="portfolio" class="py-16 bg-zinc-900">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-2xl font-semibold mb-8">ผลงาน</h2>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-white rounded shadow p-4">
+                    <div class="bg-black rounded shadow p-4">
                         <img src="project1.jpg" alt="โปรเจกต์ 1" class="w-full h-48 object-cover rounded mb-4" />
                         <h3 class="text-lg font-bold mb-2">ชื่อโปรเจกต์ 1</h3>
                         <p class="text-gray-600 mb-4">คำอธิบายสั้นๆ เกี่ยวกับโปรเจกต์</p>
@@ -162,7 +207,7 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="py-16 bg-white">
+        <section id="contact" class="py-16 bg-black">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-2xl font-semibold mb-4">ติดต่อ</h2>
                 <p class="mb-6 text-gray-700">คุณสามารถติดต่อผมได้ที่:</p>
