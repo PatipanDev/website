@@ -1,10 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
-  <title>เว็บไซต์แรกของฉัน</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ชื่อของคุณ - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>สวัสดี GitHub Pages!</h1>
-  <p>ฉันชื่อโปรแกรมเมอร์สายฟรี ✨</p>
+    <header id="home">
+        <nav class="navbar">
+            <div class="container">
+                <a href="#home" class="logo">ชื่อของคุณ</a>
+                <ul class="nav-links">
+                    <li><a href="#about">เกี่ยวกับฉัน</a></li>
+                    <li><a href="#portfolio">ผลงาน</a></li>
+                    <li><a href="#contact">ติดต่อ</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+        <div class="hero-section">
+            <img src="profile.jpg" alt="รูปโปรไฟล์ของคุณ" class="profile-pic">
+            <h1>สวัสดีครับ ผมคือ [ชื่อของคุณ]</h1>
+            <p>ตำแหน่ง/ความเชี่ยวชาญของคุณ</p>
+            <a href="#portfolio" class="btn-primary">ดูผลงาน</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section-padding">
+            <div class="container">
+                <h2>เกี่ยวกับฉัน</h2>
+                <p>เขียนเกี่ยวกับตัวคุณ, ความสนใจ, ทักษะ.</p>
+                </div>
+        </section>
+
+        <section id="portfolio" class="section-padding bg-light">
+            <div class="container">
+                <h2>ผลงาน</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="project1.jpg" alt="โปรเจกต์ 1">
+                        <h3>ชื่อโปรเจกต์ 1</h3>
+                        <p>คำอธิบายสั้นๆ เกี่ยวกับโปรเจกต์</p>
+                        <a href="#" target="_blank" class="btn-secondary">ดูเพิ่มเติม</a>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padding">
+            <div class="container">
+                <h2>ติดต่อ</h2>
+                <p>คุณสามารถติดต่อผมได้ที่:</p>
+                <div class="contact-info">
+                    <p>อีเมล: your.email@example.com</p>
+                    <p>Line ID: your_line_id</p>
+                    <p>LinkedIn: <a href="#" target="_blank">linkedin.com/in/yourprofile</a></p>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 ชื่อของคุณ. สงวนลิขสิทธิ์.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
